@@ -35,5 +35,11 @@
         </td>
     </tr>
 }
-
+@using (Html.BeginForm("Index", "User", FormMethod.Get))
+{
+   <p>
+    Find by name: @Html.TextBox("searchString") 
+    <input type="submit" value="Search" />
+   </p>
+ }
 </table>
